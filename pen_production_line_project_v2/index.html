@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink Pen Production Line</title>
+    <style>
+        body { margin: 0; font-family: Segoe UI, Arial, sans-serif; background: #0f172a; color: #e5e7eb; }
+        header { padding: 55px 9%; background: linear-gradient(120deg, #0f172a, #1e3a8a); }
+        h1 { font-size: 44px; margin: 0 0 12px; }
+        header p { font-size: 18px; color: #cbd5e1; max-width: 850px; }
+        main { padding: 30px 9% 55px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+        .card { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 22px; }
+        h2 { color: #38bdf8; margin-top: 0; }
+        li { margin: 8px 0; }
+        code { background: #111827; padding: 4px 7px; border-radius: 5px; color: #93c5fd; }
+        a { color: #38bdf8; }
+        footer { text-align: center; padding: 25px; color: #94a3b8; background: #020617; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Ink Pen Production Line Simulation</h1>
+    <p>Advanced Programming Project by Mostafa Elsayed, Student ID 100006129. This website describes a software-based manufacturing cell for assembling ink pens using Python, Tkinter HMI, InfluxDB, Grafana, and Docker.</p>
+</header>
+<main>
+    <section class="grid">
+        <div class="card">
+            <h2>Production Concept</h2>
+            <p>The simulated product is an ink pen. The line assembles the ink cartridge, nib, barrel body, cap, and clip before a final write-test quality inspection.</p>
+        </div>
+        <div class="card">
+            <h2>HMI Design</h2>
+            <p>The HMI uses a dark industrial operator-console layout with a control panel, station flow display, KPI cards, and event log.</p>
+        </div>
+        <div class="card">
+            <h2>Database and Dashboard</h2>
+            <p>Production data is written to InfluxDB in the <code>pen_line</code> bucket and visualized in Grafana panels.</p>
+        </div>
+    </section>
+
+    <section class="card" style="margin-top:18px;">
+        <h2>Assembly Stages</h2>
+        <ul>
+            <li>S1: Ink cartridge loading</li>
+            <li>S2: Nib press-fit</li>
+            <li>S3: Barrel closing</li>
+            <li>S4: Cap and clip mount</li>
+            <li>S5: Write-test inspection</li>
+        </ul>
+    </section>
+
+    <section class="card" style="margin-top:18px;">
+        <h2>Tools Used</h2>
+        <ul>
+            <li>Python and Tkinter for backend and HMI</li>
+            <li>Docker Compose for service deployment</li>
+            <li>InfluxDB for time-series production data</li>
+            <li>Grafana for live dashboard visualization</li>
+            <li>GitHub and GitHub Pages for hosting</li>
+        </ul>
+    </section>
+
+    <section class="card" style="margin-top:18px;">
+        <h2>Repository</h2>
+        <p>The source code can be hosted in a GitHub repository and the website can be published using GitHub Pages.</p>
+    </section>
+</main>
+<footer>Advanced Programming Project | SRH | 2026</footer>
+</body>
+</html>

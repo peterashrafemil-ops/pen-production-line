@@ -1,0 +1,15 @@
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB-Pen-Line
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    jsonData:
+      version: Flux
+      organization: srh
+      defaultBucket: pen_line
+      tlsSkipVerify: true
+    secureJsonData:
+      token: pen-token
+    editable: true
